@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
+import OrderCard from "./components/OrderCard";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main className="card-container">
+        <OrderCard />
+      </main>
+      <footer>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
+          Coded by <a href="#" target="_blank" rel="noreferrer">Tim Martin</a>.
+        </div>
+      </footer>
     </div>
   );
 }
