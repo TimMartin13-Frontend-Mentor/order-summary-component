@@ -23,15 +23,87 @@ body {
   background-color: var(--pale-blue);
 }
 
-.card-container {
-}
-
 .card {
   margin: 10rem auto;
-  width: 100px;
-  height: 100px;
+  width: 20.44rem;
   background-color: var(--white);
-  border-radius: 0.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 3px 3px 30px var(--desaturated-blue);
+}
+
+.card--hero {
+  width: 100%;
+  border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.card--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+}
+
+.card--header {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.card--description {
+  font-size: 0.95rem;
+  line-height: 1.6rem;
+  text-align: center;
+  padding: 1.2rem 0.5rem;
+  color: var(--desaturated-blue);
+}
+
+.plan-container {
+  display:flex;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  border-radius: 0.8rem;
+  width: 100%;
+  padding: 0.9rem 0 0.9rem 1.1rem;
+}
+
+.price-container {
+  padding: 0 2.8rem 0 1.3rem;
+}
+
+.price--title {
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.price--cost {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--desaturated-blue);
+}
+
+.price--link {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--bright-blue);
+}
+
+.payment-btn {
+  width: 100%;
+  padding: 1.05rem;
+  margin: 1.6rem 0 1.5rem;
+  border-radius: 0.8rem;
+  border-style: none;
+  background-color: var(--bright-blue);
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 700;
+  box-shadow: 3px 20px 20px var(--pale-blue);
+}
+
+.cancel {
+  text-decoration: none;
+  color: var(--desaturated-blue);
+  font-size: 0.95rem;
+  font-weight: 900;
 }
 
 .attribution { 
