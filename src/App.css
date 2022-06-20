@@ -15,6 +15,9 @@
   --very-pale-blue: hsl(225, 100%, 98%);
   --desaturated-blue: hsl(224, 23%, 55%);
   --dark-blue: hsl(223, 47%, 23%);
+
+  /* Hover color */
+  --lavender: hsl(244, 81%, 68%);
 }
 
 body {
@@ -24,8 +27,8 @@ body {
 }
 
 .card {
-  margin: 10rem auto;
-  width: 20.44rem;
+  margin: 4.44rem 1.5rem;
+  min-width: 20.44rem;
   background-color: var(--white);
   border-radius: 1.2rem;
   box-shadow: 3px 3px 30px var(--desaturated-blue);
@@ -96,7 +99,16 @@ body {
   color: var(--white);
   font-size: 0.95rem;
   font-weight: 700;
-  box-shadow: 3px 20px 20px var(--pale-blue);
+  box-shadow: 3px 20px 10px var(--pale-blue);
+}
+
+.price--link:hover{
+  text-decoration: none;
+  color: var(--lavender);
+}
+
+.payment-btn:hover {
+  background-color: var(--lavender);
 }
 
 .cancel {
@@ -106,6 +118,10 @@ body {
   font-weight: 900;
 }
 
+.cancel:hover {
+  color: black;
+}
+
 .attribution { 
   font-size: 11px; 
   text-align: center; 
@@ -113,4 +129,61 @@ body {
 
 .attribution a { 
   color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 374px) {
+  .card {
+    margin: 4.44rem auto;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background: url("./../public/images/pattern-background-desktop.svg") no-repeat top left;
+    height: 100vh;
+    background-color: var(--pale-blue);
+  } 
+
+  .card {
+    margin: 5.81rem auto;
+    width: 28.13rem;
+  }
+
+  .card--container {
+    padding: 2.5rem 3rem 3rem 2.5rem;
+  }
+
+  .card--header {
+    font-size: 1.8rem;
+  }
+
+  .card--description {
+    font-size: 1rem;
+  }
+
+  .plan-container {
+    padding: 1.5rem;
+    justify-content: space-between;
+  }
+
+  .price-container {
+    padding: 0 4.7rem 0 0;
+  }
+
+  .price--title {
+    font-size: 1.03rem;
+    padding-bottom: 0.3rem;
+  }
+
+  .price--cost {
+    font-size: 1.05rem;
+  }
+  
+  .price--link {
+    font-size: 0.85rem;
+  }
+
+  .payment-btn {
+    margin: 2rem 0;
+  }
 }
