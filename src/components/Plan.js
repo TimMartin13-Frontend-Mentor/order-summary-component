@@ -9,7 +9,7 @@ function Plan() {
         <h2 className={ planStyles.priceTitle }>Annual Plan</h2>
         <h2 className={ planStyles.priceCost }>$59.99/year</h2>
       </div>
-      <a href="#" className={ planStyles.priceLink } alt="Change plan">Change</a>
+      <a href="#" className={ planStyles.priceLink }>Change</a>
     </div>
   )
 }
