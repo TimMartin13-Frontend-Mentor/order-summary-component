@@ -1,0 +1,58 @@
+.planContainer {
+  display:flex;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  border-radius: 0.8rem;
+  width: 100%;
+  padding: 0.9rem 0 0.9rem 1.1rem;
+}
+
+.priceContainer {
+  padding: 0 2.8rem 0 1.3rem;
+}
+
+.priceTitle {
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.priceCost {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--desaturated-blue);
+}
+
+.priceLink {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--bright-blue);
+}
+
+.priceLink:hover{
+  text-decoration: none;
+  color: var(--lavender);
+}
+
+@media screen and (min-width: 500px) {
+  .planContainer {
+    padding: 1.5rem;
+    justify-content: space-between;
+  }
+
+  .priceContainer {
+    padding: 0 4.7rem 0 0;
+  }
+
+  .priceTitle {
+    font-size: 1.03rem;
+    padding-bottom: 0.3rem;
+  }
+
+  .priceCost {
+    font-size: 1.05rem;
+  }
+  
+  .priceLink {
+    font-size: 0.85rem;
+  }
+}

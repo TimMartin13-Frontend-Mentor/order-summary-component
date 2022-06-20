@@ -1,0 +1,22 @@
+.paymentBtn {
+  width: 100%;
+  padding: 1.05rem;
+  margin: 1.6rem 0 1.5rem;
+  border-radius: 0.8rem;
+  border-style: none;
+  background-color: var(--bright-blue);
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 700;
+  box-shadow: 3px 20px 10px var(--pale-blue);
+}
+
+.paymentBtn:hover {
+  background-color: var(--lavender);
+}
+
+@media screen and (min-width: 500px) {
+  .paymentBtn {
+    margin: 2rem 0;
+  }
+}
